@@ -21,6 +21,7 @@ public class BasePage {
 
     static {
         ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("--no-sandbox");
         driver = new ChromeDriver(chromeOptions);
 
     }
